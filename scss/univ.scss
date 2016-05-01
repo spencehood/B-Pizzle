@@ -1,0 +1,41 @@
+@import "compass/css3/box-sizing";
+
+@mixin bgSize($bgSize) {
+	-webkit-background-size: $bgSize;
+	-moz-background-size: $bgSize;
+	-o-background-size: $bgSize;
+	background-size: $bgSize;
+}
+@mixin totalCenter() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@mixin softTransition() {
+	transition: 0.12s linear;
+}
+@mixin animate($animInfo) {
+	-webkit-animation: $animInfo;
+	-moz-animation: $animInfo;
+	-o-animation: $animInfo;
+	animation: $animInfo;
+	animation-fill-mode: forwards;
+}
+@mixin transform($transformInfo) {
+	-webkit-transform: $transformInfo;
+	-moz-transform: $transformInfo;
+	-o-transform: $transformInfo;
+	transform: $transformInfo;
+}
+
+/******************************************************/
+
+
+
+
+/******************************************************/
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+	// responsive styles
+}
